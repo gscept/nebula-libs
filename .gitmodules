@@ -1,0 +1,8 @@
+[submodule "debugbreak"]
+	path = debugbreak
+	url = https://github.com/scottt/debugbreak.git
+	branch = master
+[submodule "tinyfiledialogs"]
+	path = tinyfiledialogs
+	url = https://github.com/native-toolkit/tinyfiledialogs.git
+	branch = master

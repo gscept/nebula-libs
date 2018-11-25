@@ -1,0 +1,18 @@
+#
+# nebula-libs
+#
+---
+imports:
+  fips-zlib:
+        git: https://github.com/floooh/fips-zlib.git
+  cr:
+        git: https://github.com/fungos/cr.git
+
+exports:
+  header-dirs:
+    - debugbreak
+    - tinyfiledialogs
+    - .
+  modules:
+    nebula-libs: .
+              
