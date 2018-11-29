@@ -4,5 +4,5 @@
 	branch = master
 [submodule "tinyfiledialogs"]
 	path = tinyfiledialogs
-	url = https://github.com/native-toolkit/tinyfiledialogs.git
+	url = https://git.code.sf.net/u/dunderbullen/tinyfiledialogs
 	branch = master
