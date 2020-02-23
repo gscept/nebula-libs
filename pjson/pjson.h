@@ -11,6 +11,12 @@
 #include <limits>
 #include <assert.h>
 #include <stddef.h>
+#ifndef _MSC_VER
+#include <strings.h>
+#include <string.h>
+#include <math.h>
+#include <float.h>
+#endif
 
 // ---- Macros
 
