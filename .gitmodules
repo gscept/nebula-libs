@@ -6,3 +6,7 @@
 	path = tinyfiledialogs
 	url = https://git.code.sf.net/u/dunderbullen/tinyfiledialogs
 	branch = master
+[submodule "minizip"]
+	path = minizip
+	url = https://github.com/nmoinvaz/minizip.git
+	branch = 1.2
