@@ -1,13 +1,17 @@
 #
 # project: nebula-libs
 #
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.21)
 
+if (NOT FIPS_IMPORT)
 # include the fips main cmake file
 get_filename_component(FIPS_ROOT_DIR "../fips" ABSOLUTE)
 include("${FIPS_ROOT_DIR}/cmake/fips.cmake")
+  project(nebula-libs)
+  fips_setup()
+endif()
 
-fips_begin_module(nebula-libs)
+fips_begin_lib(nebula-libs)
 fips_files_ex(base64/ *.* GROUP base64)
 fips_files_ex(jzon-c/ *.* GROUP jzon-c)
 fips_files_ex(tinyfiledialogs/ tinyfiledialogs.c tinyfiledialogs.h GROUP tinyfiledialogs)
@@ -20,4 +24,4 @@ if(FIPS_LINUX)
   add_definitions(-D_LARGEFILE64_SOURCE)
   add_definitions(-D_FILE_OFFSET_BIT=64)
 endif()
-fips_end_module()
+fips_end_lib()
