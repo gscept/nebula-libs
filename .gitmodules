@@ -10,3 +10,6 @@
 	path = minizip
 	url = https://github.com/nmoinvaz/minizip.git
 	branch = 1.2
+[submodule "ufbx"]
+	path = ufbx
+	url = https://github.com/ufbx/ufbx.git
