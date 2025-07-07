@@ -10,6 +10,7 @@ exports:
   header-dirs:
     - debugbreak
     - tinyfiledialogs
+    - GameNetworkingSockets
     - .
   modules:
     nebula-libs: .
