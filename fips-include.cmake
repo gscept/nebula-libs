@@ -1,0 +1,6 @@
+if(FIPS_WINDOWS)
+    configure_file(${CMAKE_CURRENT_LIST_DIR}/GameNetworkingSockets/bin/win64/GameNetworkingSockets.dll ${FIPS_PROJECT_DEPLOY_DIR}/GameNetworkingSockets.dll COPYONLY)
+    configure_file(${CMAKE_CURRENT_LIST_DIR}/GameNetworkingSockets/bin/win64/libprotobuf.dll ${FIPS_PROJECT_DEPLOY_DIR}/libprotobuf.dll COPYONLY)
+    configure_file(${CMAKE_CURRENT_LIST_DIR}/GameNetworkingSockets/bin/win64/abseil_dll.dll ${FIPS_PROJECT_DEPLOY_DIR}/abseil_dll.dll COPYONLY)
+    configure_file(${CMAKE_CURRENT_LIST_DIR}/GameNetworkingSockets/bin/win64/libcrypto-3-x64.dll ${FIPS_PROJECT_DEPLOY_DIR}/libcrypto-3-x64.dll COPYONLY)
+endif()
