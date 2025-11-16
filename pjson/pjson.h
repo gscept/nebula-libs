@@ -1249,7 +1249,7 @@ namespace pjson
                   return true;
                }
                double flVal = floor(atof(get_string_ptr()));
-               if ((flVal >= std::numeric_limits<int64>::min()) && (flVal <= std::numeric_limits<int64>::max()))
+               if ((flVal >= std::numeric_limits<int64>::min()) && (flVal <= (double)std::numeric_limits<int64>::max()))
                {
                   val = static_cast<int64>(flVal);
                   return true;
